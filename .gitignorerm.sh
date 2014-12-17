@@ -1,9 +1,6 @@
 #!/bin/bash
-
 echo "Running .gitignorerm.sh ..."
-
 foundany=0
-#for f in $(git ls-files -i -X .gitignore)
 for f in $(git check-ignore *)
 do
 {
