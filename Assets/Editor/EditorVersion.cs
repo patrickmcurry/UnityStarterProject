@@ -6,10 +6,8 @@ using System.IO;
 public class EditorVersion {
 	static EditorVersion()
 	{
-		Directory.CreateDirectory("Assets/Resources");
-		StreamWriter writer = new StreamWriter("Assets/Resources/EditorVersion.txt");
+		StreamWriter writer = new StreamWriter("Assets/Editor/EditorVersion.txt");
 		writer.WriteLine(Application.unityVersion + "");
 		writer.Close();
 	}
 }
-
