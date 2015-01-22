@@ -6,7 +6,7 @@ using UnityEditor;
 public class Unity5iOSUpdate {
 	static Unity5iOSUpdate()
 	{
-#if UNITY_IOS && UNITY_5
+#if UNITY_5
 		// Set the project to build with IL2CPP
 		PlayerSettings.SetPropertyInt("ScriptingBackend", 1, BuildTargetGroup.iOS);
 
